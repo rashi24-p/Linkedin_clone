@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linkedin clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo"><img src="images/logo.png" width="45px"></a>
+
+      <div class="Search-box"><img src="images/search.png" width="30px">
+      <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="navbar-center">
+      <ul>
+        <li><a href="#" class="active-link"><img src="images/home.webp" ><span> Home</span></a></li>
+        <li><a href="#"><img src="images/network.png" ><span> My Network</span></a></li>
+        <li><a href="#"><img src="images/job.png" ><span> Jobs</span></a></li>
+        <li><a href="#"><img src="images/messaging.webp" ><span>Messaging</span></a></li>
+        <li><a href="#"><img src="images/notification.png" ><span> 
+              Notifications</span></a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="online">
+        <img src="images/rashi7.jpg" width="200px" class="nav-profile-img"  onclick="toggleMenu()">
+      </div>
+
+    </div>
+<!-----------------profile-drop-down-menu---------->
+<div class="profile-menu-wrap" id="profileMenu">
+  <div class="Profile-menu">
+    <div class="user-info">
+      <img src="images/Rashi7.jpg">
+      <div>
+        <h3>Rashi Porwal</h3>
+        <a href="profile.html">See your profile</a>
+      </div>
+    </div>
+    <hr>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Give Feedback</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Setting & privacy</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Display & Accessibility</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Help and Support</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Logout</p>
+      <span>></span>
+    </a>
+  </div>
+</div>
+
+
+
+  </nav>
+
+  <!-------------navbar end-------------->
+
+  <div class="container">
+    <!-------left-side bar--------->
+    <div class="left-sidebar">
+      <div class="sidebar-profile-box">
+        <img src="images/devg.gif" width="101%">
+        <div class="sidebar-profile-info">
+          <img src="images/Rashi7.jpg" width="200px">
+          <h1>Rashi Porwal</h1>
+          <h3>Developer</h3>
+          <ul>
+            <li>
+              Your profile views<span>52</span>
+            </li>
+            <li>
+              Your post views<span>810</span>
+            </li>
+            <li>
+              Your connections<span>205</span>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-profile-link">
+          <a href="#"><img src="images/items.webp" width="25px">My items</a>
+          <a href="#"><img src="images/premium.webp" width="25px">Try Premium</a>
+        </div>
+      </div>
+      <div class="sidebar-activity">
+        <h3>Recent</h3>
+        <a href="#"><img src="images/recent.webp">Web development</a>
+        <a href="#"><img src="images/recent.webp">DevOps</a>
+        <a href="#"><img src="images/recent.webp">ML</a>
+        <a href="#"><img src="images/recent.webp">UI/UX</a>
+        <a href="#"><img src="images/recent.webp">coding</a>
+        <a href="#"><img src="images/recent.webp">google cloud</a>
+        <a href="#"><img src="images/recent.webp">cloud computing</a>
+        <h3>Groups</h3>
+        <a href="#"><img src="images/recent.webp">Unstoppable</a>
+        <a href="#"><img src="images/recent.webp">coding cock</a>
+        <a href="#"><img src="images/recent.webp">Happy coding</a>
+        <h3>Hashtag</h3>
+        <a href="#"><img src="images/recent.webp">coding</a>
+        <a href="#"><img src="images/recent.webp">cloud</a>
+        <a href="#"><img src="images/recent.webp">networking</a>
+        <div class="discover-more-link">
+          <a href="#">Discover more</a>
+        </div>
+      </div>
+    </div>
+    
+    
+
+
+
+    <!--------main-content----->
+    <div class="main-content">
+
+      <div class="create-post">
+        <div class="create-post-input">
+          <img src="images/Rashi7.jpg">
+          <textarea rows="2" placeholder="Write a post"></textarea>
+        </div>
+        <div class="create-post-links">
+          <li><img src="images/photo.webp">Photo</li>
+          <li><img src="images/video.webp">Video</li>
+          <li><img src="images/events.png">Events</li>
+          <li>Post</li>
+        </div>
+      </div>
+      <div class="sort-by">
+        <hr>
+        <p>Sort by: <span>top<img src="images/downarrow.webp" alt=""></span></p>
+      </div>
+    
+    <div class="post">
+      <div class="post-author">
+        <img src="images/user.jpg">
+        <div>
+          <h1>Benjamin Leo</h1>
+          <small>Founder and CEO at Gellelio Group | Angel Investor</small>
+          <small>2 hours ago</small>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione, illo voluptatibus molestiae odio ducimus, laboriosam ex blanditiis illum labore, dolorem at consectetur eius excepturi vitae deleniti reiciendis quisquam nam ipsa voluptates itaque! Nihil ad mollitia repellat sed beatae quaerat blanditiis illo accusantium quidem praesentium? Perspiciatis, earum consectetur totam, fugiat sequi ratione vitae .</p>
+      <img src="images/post.jpg" width="100%">
+    <div class="post-stats">
+      <div>
+        <img src="images/thumpsup.png">
+        <img src="images/love.webp">
+        <img src="images/clap.png">
+        <span class="likes-user">Abhinav Mishra and 75 other</span>
+</div>
+<div>
+  <span>22 comments &middot; 40 shares</span>
+</div>
+    </div>
+    <div class="post-activity">
+      <div>
+        <img src="images/rashi7.jpg" class="post-activity-user-icon">
+        <img src="images/downarrow.webp" class="post-activity-user-arrow-icon">
+      </div>
+      <div class="user-authority">
+        <div>
+          <img src="images/thumpsup.png">
+          <span>Like</span>
+        </div>
+        <div>
+          <img src="images/comment.webp">
+          <span>Comment</span>
+        </div>
+        <div>
+          <img src="images/share.png">
+          <span>Share</span>
+        </div>
+        <div>
+          <img src="images/send.png">
+          <span>Send</span>
+        </div>
+      </div>
+      </div>
+      
+
+    </div>
+
+    <div class="create-post">
+      <div class="create-post-input">
+        <img src="images/Rashi7.jpg">
+        <textarea rows="2" placeholder="Write a post"></textarea>
+      </div>
+      <div class="create-post-links">
+        <li><img src="images/photo.webp">Photo</li>
+        <li><img src="images/video.webp">Video</li>
+        <li><img src="images/events.png">Events</li>
+        <li>Post</li>
+      </div>
+    </div>
+    <div class="sort-by">
+      <hr>
+      <p>Sort by: <span>top<img src="images/downarrow.webp" alt=""></span></p>
+    </div>
+  
+  <div class="post">
+    <div class="post-author">
+      <img src="images/user.jpg">
+      <div>
+        <h1>lucy chales</h1>
+        <small>Founder and CEO at Atlas | Angel Investor</small>
+        <small>4 hours ago</small>
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione, illo voluptatibus molestiae odio ducimus, laboriosam ex blanditiis illum labore, dolorem at consectetur eius excepturi vitae deleniti reiciendis quisquam nam ipsa voluptates itaque! Nihil ad mollitia repellat sed beatae quaerat blanditiis illo accusantium quidem praesentium? Perspiciatis, earum consectetur totam, fugiat sequi ratione vitae .</p>
+    <img src="images/user.jpg" width="100%">
+  <div class="post-stats">
+    <div>
+      <img src="images/thumpsup.png">
+      <img src="images/love.webp">
+      <img src="images/clap.png">
+      <span class="likes-user">Abhinav Mishra and 75 other</span>
+</div>
+<div>
+<span>22 comments &middot; 40 shares</span>
+</div>
+  </div>
+  <div class="post-activity">
+    <div>
+      <img src="images/post.jpg" class="post-activity-user-icon">
+      <img src="images/downarrow.webp" class="post-activity-user-arrow-icon">
+    </div>
+    <div class="user-authority">
+      <div>
+        <img src="images/thumpsup.png">
+        <span>Like</span>
+      </div>
+      <div>
+        <img src="images/comment.webp">
+        <span>Comment</span>
+      </div>
+      <div>
+        <img src="images/share.png">
+        <span>Share</span>
+      </div>
+      <div>
+        <img src="images/send.png">
+        <span>Send</span>
+      </div>
+    </div>
+    </div>
+    
+
+  </div>
+</div>
+    <!---------right-sidebar--------->
+    <div class="right-sidebar">
+      <div class="sidebar-news">
+        <img src="images/info.webp" class="info-icon">
+        <h1>Trending News</h1>
+        <a href="#">High demand for skilled manpower</a>
+        <span>1d ago &middot; 10,934 readers</span>
+
+        <a href="#">Careers growing horizontly too</a>
+        <span>1d ago &middot; 1,934 readers</span>
+
+        <a href="#">Less work visa for US,more for UK</a>
+        <span>1d ago &middot; 5,939 readers</span>
+
+        <a href="#">More hiring = high confidence</a>
+        <span>1d ago &middot; 7,934 readers</span>
+
+        <a href="#" class="read-more-link">Read more</a>
+      </div>
+
+      <div class="sidebar-ad">
+        <small>Ad &middot;&middot;&middot;</small>
+        <p>Master the 5 principles of web design</p>
+        <div>
+          <img src="images/Rashi7.jpg" width="200px">
+          <img src="images/linpr.webp" width="20px">
+        </div>
+        <div>
+          <b>Brand and Demand in Xiaomi</b>
+        <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+          <a href="#">About</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Get the app</a>
+          <a href="#">More</a>
+
+          <div class="copyright-msg">
+            <img src="images/logo.png" width="45px">
+            <p>Linkedup &#169;2022.All right reserved</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+      profileMenu.classList.toggle("open-menu");
+    }
+  </script>
+
+</body>
+</html>

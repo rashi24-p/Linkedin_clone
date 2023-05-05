@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linkedin clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html" class="logo"><img src="images/logo.png" width="45px"></a>
+
+      <div class="Search-box"><img src="images/search.png" width="30px">
+      <input type="text" placeholder="Search">
+      </div>
+    </div>
+    <div class="navbar-center">
+      <ul>
+        <li><a href="index.html" class="active-link"><img src="images/home.webp" ><span> Home</span></a></li>
+        <li><a href="#"><img src="images/network.png" ><span> My Network</span></a></li>
+        <li><a href="#"><img src="images/job.png" ><span> Jobs</span></a></li>
+        <li><a href="#"><img src="images/messaging.webp" ><span>Messaging</span></a></li>
+        <li><a href="#"><img src="images/notification.png" ><span> 
+              Notifications</span></a></li>
+      </ul>
+    </div>
+    <div class="navbar-right">
+      <div class="online">
+        <img src="images/rashi7.jpg" width="200px" class="nav-profile-img"  onclick="toggleMenu()">
+      </div>
+
+    </div>
+<!-----------------profile-drop-down-menu---------->
+<div class="profile-menu-wrap" id="profileMenu">
+  <div class="Profile-menu">
+    <div class="user-info">
+      <img src="images/Rashi7.jpg">
+      <div>
+        <h3>Rashi Porwal</h3>
+        <a href="#">See your profile</a>
+      </div>
+    </div>
+    <hr>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Give Feedback</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Setting & privacy</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Display & Accessibility</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Help and Support</p>
+      <span>></span>
+    </a>
+    <a href="#" class="Profile-menu-link">
+      <img src="images/info.webp" >
+      <p>Logout</p>
+      <span>></span>
+    </a>
+  </div>
+</div>
+
+
+
+  </nav>
+
+  <!-------------navbar end-------------->
+
+  <div class="container">
+    <div class="profile-main">
+      <div class="profile-container">
+        <img src="images/devg.gif" width="100%">
+        <div class="profile-container-inner">
+          <img src="images/Rashi7.jpg" class="profile-pic">
+          <h1>Rashi Porwal</h1>
+          <b>Developer</b>
+          <p>Jhansi,India &middot; <a href="#">Contact info</a></p>
+          <div class="mutual-connection">
+            <img src="images/user.jpg">
+            <span>1 mutual connection:lucy charles</span>
+          </div>
+          <div class="profile-btn">
+            <a href="#" class="primary-btn"><img src="images/connect.webp">Connect</a>
+            <a href="#"><img src="images/messaging.webp">Message</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!------------profile-sidebar----------->
+
+    <div class="profile-sidebar"></div>
+  </div>
+
+  <script>
+    let profileMenu = document.getElementById("profileMenu");
+
+    function toggleMenu(){
+      profileMenu.classList.toggle("open-menu");
+    }
+  </script>
+
+</body>
+</html>
